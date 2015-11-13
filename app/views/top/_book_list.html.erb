@@ -1,0 +1,10 @@
+<% @books.each do |book| %>
+  <div class="user-outer">
+    <div class="image-outer">
+      <img src="<%= book.image %>">
+    </div>
+    <div class="user-name">
+      <h1><%= book.title %></h1>
+    </div>
+  </div>
+<% end %>

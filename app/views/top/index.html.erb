@@ -1,0 +1,15 @@
+<div id="main" class="clearfix">
+  <div id="content">
+    <div id="search-box">
+      <%= form_tag('/search', method: :get) do %>
+        <%= text_field_tag :search, "", id: "inc_search", class: "search__query", name: "keyword", placeholder: "お目当ての少女漫画を入力" %><button class="searchsubmit" title="検索" type="submit">検索</button>
+      <% end %>
+    </div>
+    <h2>少女漫画一覧</h2>
+    <div id='book_list'>
+      <%= render partial: 'book_list' %>
+    </div>
+  </div>
+  <%= render partial: 'side_bar' %>
+</div>
+
